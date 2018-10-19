@@ -53,7 +53,7 @@ tests({
 		} catch (e) {
 			error = e;
 		}
-		eq(typeOf(error), 'string');
+		eq(error.message, "fakeLibrary is not available to be called.")
 	}
 
 });
